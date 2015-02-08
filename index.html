@@ -94,7 +94,7 @@ function initMap() {
   map = new L.Map('map');                       
   
   L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-     attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+     attribution: 'Base map &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
      maxZoom: 18
   }).addTo(map);
   map.attributionControl.setPrefix(''); // Don't show the 'Powered by Leaflet' text.
@@ -353,8 +353,13 @@ function swap(coords) {
 </div>
 
 <div id="map">
-
   <div style="display: none;" id="results"></div>
+  
+  <div id="transportapi-credit">
+  Journey planning by<br>
+  <a href="http://www.transportapi.com" title="TransportAPI - Powering change and innovation in transport"><img src="http://www.transportapi.com/transportapi-logo-100px.png" border="0"></a>
+  </div>
+  
 </div>
 
 </body>
