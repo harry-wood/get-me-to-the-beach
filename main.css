@@ -3,14 +3,6 @@ BODY, P, H1, H2, H3, H4, H5, H6, LI, TD, TH, DD, DT {
   color: black;
 }
 
-BODY {
-  margin:0px;
-  background-color: #ffffff;
-  color: #000000;
-  /*Scrollbar-face-color: green; 
-    Scrollbar-arrow-color: black;*/
-}
-
 H1, H2, H3, H4, H5, TH {
   margin:2px;
   font-weight: bold;
@@ -34,14 +26,19 @@ a:hover   { text-decoration:underline; }
 
 
 html, body, #map, #startScreen {
+  margin:0px;
+  padding:0px;
   height:100%;
   width:100%;
 }
 
-
-body {
-  background-image:url('./bournemouth-beach.jpg'); /* image from http://commons.wikimedia.org/wiki/Bournemouth#mediaviewer/File:Bournemouth_06.JPG */
-  background-size: 100%;
+/* image from http://commons.wikimedia.org/wiki/Bournemouth#mediaviewer/File:Bournemouth_06.JPG */
+body { 
+  background: url('./bournemouth-beach.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #startScreen {
